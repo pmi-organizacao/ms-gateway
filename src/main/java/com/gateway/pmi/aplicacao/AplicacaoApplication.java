@@ -21,7 +21,7 @@ public class AplicacaoApplication {
 	public RouteLocator routes(RouteLocatorBuilder builder) {
 		return builder
 				.routes()
-				.route(r -> r.path("/gerencial-projetos/**").uri("lb://msgerencialprojeto"))
+				.route(r -> r.path("/**").uri("lb://msgerencialprojeto"))
 				.build();
 	}
 }
